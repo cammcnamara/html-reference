@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML text Elements</title>
+    <meta name="description" content="Demonstration of HTML text-level semantic elements.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cameron McNamara">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Table Elements</h1>
+        <p>This section covers various HTML table elements and their usage.</p>
+    </header>
+
+    <nav aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="text.html">Text</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="structure.html">Structure</a>
+        <a href="deprecated.html">Deprecated</a>
+        <a href="experiments.html">Experiments</a>
+    </nav>
+
+    <table>
+        <caption>Favorite Cities Table</caption>
+
+        <colgroup>
+            <col span="1" style="background-color: #e6e6e6;">
+            <col span="1" style="background-color: #e6e6e6;">
+            <col span="1" style="background-color: #e6e6e6;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th id="rank" scope="col">Rank</th>
+                <th id="city" scope="col">City</th>
+                <th id="country" scope="col">Country</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td headers="rank">1</td>
+                <td headers="city">Madrid</td>
+                <td headers="country">Spain</td>
+            </tr>
+            <tr>
+                <td headers="rank">2</td>
+                <td headers="city">Budapest</td>
+                <td headers="country">Hungary</td>
+            </tr>
+            <tr>
+                <td headers="rank">3</td>
+                <td headers="city">San Diego</td>
+                <td headers="country">United States</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <table>
+        <caption>Favorite Cities Table</caption>
+
+        <colgroup>
+            <col span="1" style="background-color: #e6e6e6;">
+            <col span="1" style="background-color: #f9f9f9;">
+            <col span="1" style="background-color: #ffffff;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th id="rank" scope="col">Rank</th>
+                <th id="city" scope="col">City</th>
+                <th id="country" scope="col">Country</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td colspan="3" style="text-align: center; font-weight: bold;">
+                    Top 3 Favorite Cities (colspan)
+                </td>
+            </tr>
+
+            <tr>
+                <td headers="rank">1</td>
+                <td headers="city">Madrid</td>
+                <td headers="country">Spain</td>
+            </tr>
+
+            <tr>
+                <td headers="rank" rowspan="2">2 (rowspan)</td>
+                <td headers="city">Budapest</td>
+                <td headers="country">Hungary</td>
+            </tr>
+
+            <tr>
+                <td headers="city">San Diego</td>
+                <td headers="country">United States</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+</body>

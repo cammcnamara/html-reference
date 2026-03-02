@@ -1,0 +1,3 @@
+# HTML Kitchen Sink
+
+This project is a multi-page HTML5 reference site built for COMP 494 using plain HTML and one shared CSS file, with each page focused on a specific category: metadata, text semantics, media embedding, tables, forms, structure, deprecated elements, and experimental browser behavior. My three custom experiments test nested interactive controls, `contenteditable` behavior, and the Popover API, each with a written hypothesis and finding. I used an LLM to speed up boilerplate drafting and element checklist coverage, then manually reviewed structure, semantics, and browser behavior notes so the pages still reflect deliberate practice rather than blind generation.

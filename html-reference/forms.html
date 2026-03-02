@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Form Elements</title>
+  <meta name="description" content="Demonstration of HTML text-level semantic elements.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cameron McNamara">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Form Elements</h1>
+    <p>This section covers various HTML form elements and their usage.</p>
+  </header>
+
+  <nav aria-label="Primary Navigation">
+    <a href="index.html">Home</a>
+    <a href="text.html">Text</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="structure.html">Structure</a>
+    <a href="deprecated.html">Deprecated</a>
+    <a href="experiments.html">Experiments</a>
+  </nav>
+
+
+
+  <form action="/submit" method="post" enctype="multipart/form-data" novalidate>
+
+    <fieldset>
+      <legend>Account Information</legend>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required minlength="4" autofocus>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="new-password">
+
+      <input type="hidden" name="form-id" value="registration123">
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="18" max="100" step="1">
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+
+      <label for="website">Website</label>
+      <input type="url" id="website" name="website">
+
+      <label for="search">Search Interests</label>
+      <input type="search" id="search" name="search">
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Dates & Preferences</legend>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time">
+
+      <label for="datetime">Meeting</label>
+      <input type="datetime-local" id="datetime" name="datetime">
+
+      <label for="month">Favorite Month</label>
+      <input type="month" id="month" name="month">
+
+      <label for="week">Busy Week</label>
+      <input type="week" id="week" name="week">
+
+      <label for="color">Favorite Color</label>
+      <input type="color" id="color" name="color">
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>File Upload</legend>
+
+      <label for="files">Upload Documents</label>
+      <input type="file" id="files" name="files" accept=".pdf,.jpg,.png" multiple>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Choices</legend>
+
+      <p>Newsletter Preferences</p>
+      <label>
+        <input type="checkbox" name="newsletter" value="tech" checked>
+        Tech
+      </label>
+
+      <label>
+        <input type="checkbox" name="newsletter" value="sports">
+        Sports
+      </label>
+
+      <label>
+        <input type="checkbox" name="newsletter" value="finance">
+        Finance
+      </label>
+
+      <p>Membership Type</p>
+      <label>
+        <input type="radio" name="membership" value="basic">
+        Basic
+      </label>
+
+      <label>
+        <input type="radio" name="membership" value="pro">
+        Pro
+      </label>
+
+      <label>
+        <input type="radio" name="membership" value="elite">
+        Elite
+      </label>
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Dropdowns & Suggestions</legend>
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <optgroup label="Europe">
+          <option value="spain">Spain</option>
+          <option value="hungary" selected>Hungary</option>
+        </optgroup>
+        <optgroup label="North America">
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+        </optgroup>
+      </select>
+
+      <label for="browser">Preferred Browser</label>
+      <input list="browsers" id="browser" name="browser">
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+      </datalist>
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Feedback</legend>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" cols="40" maxlength="200" readonly>
+  Enter feedback here...
+      </textarea>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Range & Output</legend>
+
+      <label for="volume">Volume</label>
+      <input type="range" id="volume" name="volume" min="0" max="100" value="50"
+        oninput="volumeOutput.value = volume.value">
+      <output id="volumeOutput">50</output>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Status Indicators</legend>
+
+      <label>Profile Completion</label>
+      <meter min="0" max="100" value="75" low="30" high="80" optimum="90">
+        75%
+      </meter>
+
+      <label>Upload Progress</label>
+      <progress value="60" max="100">60%</progress>
+
+      <label>Loading</label>
+      <progress></progress>
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Buttons</legend>
+
+      <input type="submit" value="Submit Form">
+      <input type="reset" value="Reset Form">
+      <input type="button" value="Click Me">
+
+      <input type="image" src="assets/submit.png" alt="Submit Image Button" width="100" height="40">
+
+      <button type="submit">Submit Button</button>
+      <button type="reset">Reset Button</button>
+      <button type="button" disabled tabindex="0">Disabled Button</button>
+
+    </fieldset>
+
+  </form>
+</body>
