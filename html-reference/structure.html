@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Structure </title>
+    <meta name="description" content="Demonstration of HTML text-level semantic elements.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cameron McNamara">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Structure</h1>
+        <p>This section covers various HTML structural elements and their usage.</p>
+    </header>
+
+    <nav aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="text.html">Text</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="structure.html">Structure</a>
+        <a href="deprecated.html">Deprecated</a>
+        <a href="experiments.html">Experiments</a>
+    </nav>
+
+    <nav aria-label="Secondary Navigation">
+        <p>Secondary Navigation</p>
+        <a href="#article">Article</a>
+        <a href="#lists">Lists</a>
+        <a href="#interactive">Interactive</a>
+    </nav>
+
+    <article id="article">
+        <header>
+            <h2>Article Header</h2>
+            <p>This is the header of the article, containing the title and introductory information.</p>
+        </header>
+
+        <section>
+            <h3>Section 1</h3>
+            <p>This is the first section of the article, containing relevant content and information.</p>
+        </section>
+
+        <section>
+            <h3>Section 2</h3>
+            <p>This is the second section of the article, containing additional relevant content and information.</p>
+        </section>
+
+        <section>
+            <h3>Section 3</h3>
+            <p>This is the third section of the article, containing further relevant content and information.</p>
+        </section>
+
+        <aside>
+            <h4>Related Information</h4>
+            <p>This aside contains related information, such as links to related articles, advertisements, or additional
+                resources.</p>
+        </aside>
+
+        <footer>
+            <p>Article Footer: This section contains information about the article, such as the author, publication
+                date, or related links.</p>
+        </footer>
+    </article>
+
+    <section id="lists">
+        <h2>Lists</h2>
+
+        <h3>To Do List:</h3>
+        <ul>
+            <li>Finish HTML HW
+                <ul>
+                    <li>Review HTML Directions</li>
+                    <li>Complete code examples</li>
+                    <li>Submit assignment</li>
+                </ul>
+            </li>
+
+            <li>Study For HTML Exam</li>
+            <li>Master HTML</li>
+        </ul>
+
+        <h3>Reversed Ordered List:</h3>
+        <ol start=3 reversed>
+            <li>Countdown to 1</li>
+            <li>This is number 2</li>
+            <li>Number 1 because we reversed the list</li>
+        </ol>
+
+        <h3>Description List:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, a stylesheet language used for describing the presentation of a document written
+                in HTML.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>A programming language commonly used to create interactive effects within web browsers.</dd>
+        </dl>
+    </section>
+
+    <section id="Interactive">
+        <h2>Interactive Elements</h2>
+        <p>This section contains interactive elements for user engagement.</p>
+
+        <details>
+            <summary>Click to reveal more information</summary>
+            <p>This is additional information that is revealed when the user clicks on the summary element.</p>
+        </details>
+
+        <button onclick="document.getElementById('myDialog').show()">Open Dialog</button>
+        <dialog id="myDialog">
+            <p>This is a dialog element, which can be used to create modal dialogs or pop-up windows.</p>
+            <button onclick="document.getElementById('myDialog').close()">Close</button>
+        </dialog>
+
+        <menu>
+            <li><a href="#article">Go to Article</a></li>
+            <li><a href="#lists">Go to Lists</a></li>
+            <li><a href="#interactive">Go to top of Interactive</a></li>
+        </menu>
+
+        <h3>Template Example</h3>
+        <template id="cardTemplate">
+            <div class="card">
+                <h4>Template Title</h4>
+                <p>This content is inert until activated with JavaScript.</p>
+            </div>
+        </template>
+
+        <div>
+            This is a generic <code>&lt;div&gt;</code> used appropriately as a neutral container.
+        </div>
+
+        <p>
+            Note: The <code>&lt;slot&gt;</code> element only has meaning inside
+            a Shadow DOM context and is documented here conceptually.
+        </p>
+
+
+
+    </section>
+
+    <footer style="background-color: #eee; padding: .01rem; text-align: center;">
+        <p>&copy; 2026 Cameron McNamara</p>
+    </footer>
+
+</html>
