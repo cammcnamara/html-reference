@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Experiments </title>
+    <meta name="description" content="Demonstration of HTML text-level semantic elements.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cameron McNamara">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Depreciated</h1>
+        <p>This section covers various HTML depreciated elements and their usage.</p>
+    </header>
+
+    <nav aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="text.html">Text</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="structure.html">Structure</a>
+        <a href="deprecated.html">Deprecated</a>
+        <a href="experiments.html">Experiments</a>
+    </nav>
+
+</body>
+
+<main>
+    <section>
+        <h2>&lt;font&gt;</h2>
+        <font size="2" color="blue">This is a sentence with a font tag.</font>
+        <!--- The font element is deprecated and should not be used in modern HTML, but should be declared in CSS via font-size and color properties. -->
+
+        <h2>&lt;center&gt;</h2>
+        <center>This text is centered using the center tag.</center>
+        <!--- The center element is deprecated and should not be used in modern HTML, but should be declared in CSS via text-align: center;. -->
+
+        <h2>&lt;big&gt;</h2>
+        <big>This text is displayed in a larger font size using the big tag.</big>
+        <!--- The big element is deprecated and should not be used in modern HTML, but should be declared in CSS via font size. -->
+
+        <h2>&lt;small&gt;</h2>
+        <small>This text is displayed in a smaller font size using the small tag.</small>
+        <!--- The <small> element is NOT deprecated. It is still valid in HTML5  -->
+
+        <h2>&lt;tt&gt;</h2>
+        <tt>This text is displayed in a teletype using the tt tag.</tt>
+        <!---  The <tt> (teletype) element displayed text in a monospace font and depreciated because it only was used for formatting.
+             Modern alternative is <code> for semantic code -->
+
+        <h2>&lt;strike&gt;</h2>
+        <strike>This text is displayed with a strikethrough using the strike tag.</strike>
+        <!--- The strike element is deprecated because it was only used for styling. <s> should be used for style or <del> for semantic deletion should be used as alternatives -->
+
+        <h2>&lt;acronym&gt;</h2>
+        <acronym title="World Wide Web">WWW</acronym>
+        <!--- The acronym element is deprecated and <abbr> should be used as an alternative -->
+
+        <h2>&lt;bgsound&gt;</h2>
+        <bgsound src="assets/audio.mp3" loop="infinite" volume="-10">
+            <!--- The <bgsound> element was an Internet Explorer–specific tag that automatically played background audio and has been deprecated.  -->
+        </bgsound>
+
+        <h2>&lt;marquee&gt;</h2>
+        <marquee behavior="scroll" direction="left" scrollamount="5">This text scrolls across the screen using the
+            marquee tag.</marquee>
+        <!--- The marquee element is deprecated and should not be used in modern HTML, but should be declared in CSS. Modern alternative: <audio> with proper controls and accessibility. -->
+
+
+    </section>
+</main>
+
+<footer style="background-color: #eee; padding: .01rem; text-align: center;">
+    <p>&copy; 2026 Cameron McNamara.</p>
+</footer>
+
+</html>
