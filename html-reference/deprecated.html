@@ -26,55 +26,72 @@
         <a href="experiments.html">Experiments</a>
     </nav>
 
+
+    <main>
+        <section>
+            <h2>&lt;font&gt;</h2>
+            <font size="2" color="blue">This is a sentence with a font tag.</font>
+            <!--  The <font> tag was used to change the color, size, or typeface of text directly in HTML.
+              It is deprecated because styling should be handled in CSS, not inside the markup.
+              Today, we use CSS properties like color, font-size, and font-family instead.-->
+
+            <h2>&lt;center&gt;</h2>
+            <center>This text is centered using the center tag.</center>
+            <!-- The <center> tag was used to center text or other elements on the page.
+              It is deprecated because layout and positioning should be controlled with CSS.
+              The modern way to center content is using CSS like text-align: center or flexbox.  -->
+
+            <h2>&lt;big&gt;</h2>
+            <big>This text is displayed in a larger font size using the big tag.</big>
+            <!-- The <big> tag made text slightly larger than the surrounding content.
+              It is deprecated because font sizing should be done using CSS.
+              The proper alternative is the CSS font-size property.-->
+
+            <h2>&lt;small&gt;</h2>
+            <small>This text is displayed in a smaller font size using the small tag.</small>
+            <!-- The <small> element is NOT deprecated. It is still valid in HTML5 -->
+
+            <h2>&lt;tt&gt;</h2>
+            <tt>This text is displayed in a teletype using the tt tag.</tt>
+            <!-- The <tt> (teletype) tag displayed text in a monospace font.
+              It is deprecated because it only controlled appearance.
+              Today, <code> is used for code-related content, or CSS can apply a monospace font.-->
+
+            <h2>&lt;strike&gt;</h2>
+            <strike>This text is displayed with a strikethrough using the strike tag.</strike>
+            <!-- The <strike> tag added a line through text for visual effect.
+              It is deprecated because it did not provide semantic meaning.
+              We now use <s> for stylistic strikethrough or <del> to show deleted content.-->
+
+            <h2>&lt;acronym&gt;</h2>
+            <acronym title="World Wide Web">WWW</acronym>
+            <!--  The <acronym> tag was used to define abbreviations and show a tooltip.It was removed in HTML5.
+            The <abbr> tag is now used instead for abbreviations and acronyms. -->
+
+
+            <h2>&lt;bgsound&gt;</h2>
+            <bgsound src="assets/audio.mp3" loop="infinite" volume="-10">
+                <!--- The <bgsound> element was an Internet Explorer–specific tag that automatically played background audio and has been deprecated.
+             Modern browsers ignore it and the correct approach today is using the <audio> element.  
+            -->
+
+                <h2>&lt;marquee&gt;</h2>
+                <marquee behavior="scroll" direction="left" scrollamount="5">This text scrolls across the screen using
+                    the
+                    marquee tag.</marquee>
+                <!--- The <marquee> tag created scrolling text across the screen.
+            It was never officially standardized and is now obsolete.
+            Animations like this should be done using CSS animations or JavaScript.
+            -->
+
+                <!-- All of the tags above were flagged by the validator as obsolete aside from <small>-->
+        </section>
+    </main>
+
+    <footer style="background-color: #eee; padding: .01rem; text-align: center;">
+        <p>&copy; 2026 Cameron McNamara.</p>
+    </footer>
+
 </body>
-
-<main>
-    <section>
-        <h2>&lt;font&gt;</h2>
-        <font size="2" color="blue">This is a sentence with a font tag.</font>
-        <!--- The font element is deprecated and should not be used in modern HTML, but should be declared in CSS via font-size and color properties. -->
-
-        <h2>&lt;center&gt;</h2>
-        <center>This text is centered using the center tag.</center>
-        <!--- The center element is deprecated and should not be used in modern HTML, but should be declared in CSS via text-align: center;. -->
-
-        <h2>&lt;big&gt;</h2>
-        <big>This text is displayed in a larger font size using the big tag.</big>
-        <!--- The big element is deprecated and should not be used in modern HTML, but should be declared in CSS via font size. -->
-
-        <h2>&lt;small&gt;</h2>
-        <small>This text is displayed in a smaller font size using the small tag.</small>
-        <!--- The <small> element is NOT deprecated. It is still valid in HTML5  -->
-
-        <h2>&lt;tt&gt;</h2>
-        <tt>This text is displayed in a teletype using the tt tag.</tt>
-        <!---  The <tt> (teletype) element displayed text in a monospace font and depreciated because it only was used for formatting.
-             Modern alternative is <code> for semantic code -->
-
-        <h2>&lt;strike&gt;</h2>
-        <strike>This text is displayed with a strikethrough using the strike tag.</strike>
-        <!--- The strike element is deprecated because it was only used for styling. <s> should be used for style or <del> for semantic deletion should be used as alternatives -->
-
-        <h2>&lt;acronym&gt;</h2>
-        <acronym title="World Wide Web">WWW</acronym>
-        <!--- The acronym element is deprecated and <abbr> should be used as an alternative -->
-
-        <h2>&lt;bgsound&gt;</h2>
-        <bgsound src="assets/audio.mp3" loop="infinite" volume="-10">
-            <!--- The <bgsound> element was an Internet Explorer–specific tag that automatically played background audio and has been deprecated.  -->
-        </bgsound>
-
-        <h2>&lt;marquee&gt;</h2>
-        <marquee behavior="scroll" direction="left" scrollamount="5">This text scrolls across the screen using the
-            marquee tag.</marquee>
-        <!--- The marquee element is deprecated and should not be used in modern HTML, but should be declared in CSS. Modern alternative: <audio> with proper controls and accessibility. -->
-
-
-    </section>
-</main>
-
-<footer style="background-color: #eee; padding: .01rem; text-align: center;">
-    <p>&copy; 2026 Cameron McNamara.</p>
-</footer>
 
 </html>
