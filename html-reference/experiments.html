@@ -25,7 +25,52 @@
         <a href="structure.html">Structure</a>
         <a href="deprecated.html">Deprecated</a>
         <a href="experiments.html">Experiments</a>
+        <a href="experiments-2.html">Extreme Nested Div Stress Test</a>
     </nav>
+
+    <section>
+        <h2>Nested Details</h2>
+        <p> Q: What happens when you put an expandable details inside the summary of another details element?</p>
+        <p> Hypothesis: I think it will cause two different expandable sections to render side by side</p>
+        <details>
+            <summary>Outer Summary</summary>
+            <p>First content</p>
+            <details>
+                <summary>Inner Summary</summary>
+                <p>Second content</p>
+            </details>
+
+        </details>
+        <p> A: The inner details element is rendered as part of the summary of the outer details , so it does not
+            appear unless you expand the outer details; it is nested.
+        </p>
+        <hr>
+    </section>
+
+    <section>
+        <h2>Nested Form Experiment</h2>
+
+        <p> Q: What happens when you nest a form inside another form?</p>
+        <p> Hypothesis: the browser will automatically sepearte the two forms and display them as two distinct forms on
+            the page.</p>
+
+        <form id="outer-form">
+            <p>Outer Form</p>
+            <input id="outer-input" type="text" placeholder="Outer Input">
+            <form id="inner-form">
+                <p>Inner Form</p>
+                <input id="inner-input" type="text" placeholder="Inner Input">
+                <button type="submit">Submit Inner</button>
+            </form>
+            <button type="submit">Submit Outer</button>
+        </form>
+
+        <p>A:The browser automatically closes the first form before starting the second. but the inner submit button
+            will submit on behalf of both the inner and outter form.</p>
+    </section>
+
+
+
 
 </body>
 
