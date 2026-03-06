@@ -88,7 +88,7 @@
             </ul>
 
             <h3>Reversed Ordered List:</h3>
-            <ol start=3 reversed>
+            <ol start="3" reversed>
                 <li>Countdown to 1</li>
                 <li>This is number 2</li>
                 <li>Number 1 because we reversed the list</li>
@@ -142,10 +142,11 @@
                 This is a generic <code>&lt;div&gt;</code> used appropriately as a neutral container.
             </div>
 
-            <p>
-                Note: The <code>&lt;slot&gt;</code> element only has meaning inside
-                a Shadow DOM context and is documented here conceptually.
-            </p>
+            <template id="slotExample">
+                <div>
+                    <slot name="example">Fallback content</slot>
+                </div>
+            </template>
 
         </section>
 

@@ -1,3 +1,7 @@
-# HTML Kitchen Sink
+# HTML Reference
 
-This project is a multi-page HTML5 reference site built for COMP 494 using plain HTML and one shared CSS file, with each page focused on a specific category: metadata, text semantics, media embedding, tables, forms, structure, deprecated elements, and experimental browser behavior. My three custom experiments test nested interactive controls, `contenteditable` behavior, and the Popover API, each with a written hypothesis and finding. I used an LLM to speed up boilerplate drafting and element checklist coverage, then manually reviewed structure, semantics, and browser behavior notes so the pages still reflect deliberate practice rather than blind generation.
+This project is a multi-page HTML5 reference site built for COMP 494 using plain HTML and one shared CSS file, with each page focused on a specific category: metadata, text semantics, media embedding, tables, forms, structure, deprecated elements, and experimental browser behavior.  My Three custom expriements included nesting a details element within another details element, endlessely nesting divs to see how the browser renders, and nesting a form inside another form.
+
+I utilized Chat GPT for generate small HTML examples (one element at a time) and to double-check element requirements for certain pages. However, I reviewed and edited the generated code myself, verified behavior in the browser, and ensured the pages met the assignment requirements and validation rules. The only expcetion to this was for the experiment-2 page, I utilized it to write me javascript script to accuractely div nest endlessly.
+
+
